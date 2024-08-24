@@ -1,0 +1,58 @@
+const UserData = [
+  {
+    id: 1,
+    title: "Here’s the username",
+    status: "",
+    userid: "FE-2023",
+    role: "student",
+    email: "usertwo@gmail.com",
+    icons: "",
+  },
+  {
+    id: 2,
+    title: "Here’s the username",
+    status: "",
+    userid: "FE-2023",
+    role: "student",
+    email: "usertwo@gmail.com",
+    icons: "",
+  },
+  {
+    id: 3,
+    title: "Here’s the username",
+    status: "",
+    userid: "FE-2023",
+    role: "student",
+    email: "usertwo@gmail.com",
+    icons: "",
+  },
+  {
+    id: 4,
+    title: "Here’s the username",
+    status: "",
+    userid: "FE-2023",
+    role: "student",
+    email: "usertwo@gmail.com",
+    icons: "",
+  },
+  {
+    id: 5,
+    title: "Here’s the username",
+    status: "",
+    userid: "FE-2023",
+    role: "student",
+    email: "usertwo@gmail.com",
+    icons: "",
+  },
+  {
+    id: 6,
+    title: "Here’s the username",
+    status: "",
+    userid: "FE-2023",
+    role: "student",
+    email: "usertwo@gmail.com",
+    icons: "",
+  },
+];
+
+export default UserData;
