@@ -4,14 +4,13 @@
   box-sizing: border-box;
 }
 
- body {
+body {
   background-color: rgba(0, 0, 0, 0.9) !important;
   height: auto;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 .App {
   text-align: center;
@@ -52,30 +51,29 @@
   }
 }
 
-
 /* ------------------------------------------------------------- */
 
 /* NavBar */
-.navbar{
+.navbar {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .aaa a {
-  color: white
+  color: white;
 }
 
-.aaa{
-  color: #BF9B30;
+.aaa {
+  color: #bf9b30;
   margin-left: auto;
 }
-.aaa a:hover{
+.aaa a:hover {
   color: white;
-} 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #BF9B30 !important;
 }
-.navbar-toggler-icon{
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #bf9b30 !important;
+}
+.navbar-toggler-icon {
   background-color: white;
-
 }
 /* ======================================= */
 
@@ -101,7 +99,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  color: white; 
+  color: white;
   padding: 20px;
   overflow-y: auto; /* Enable scrolling inside this div if needed */
 }
@@ -110,28 +108,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
-.line{
+.line {
   width: 55px;
   height: 2px;
-  background-color: #BF9B30;
-   margin: 10px 30px;
-   display: block;
+  background-color: #bf9b30;
+  margin: 10px 30px;
+  display: block;
 }
-.grid{
+.grid {
   width: 100%;
   height: auto;
 }
-.icons{
-  color: #BF9B30;
+.icons {
+  color: #bf9b30;
   font-size: 20px;
   text-align: center;
 }
 
-
-.table tbody tr td{
+.table tbody tr td {
   text-align: center;
   height: 90px;
   background-color: rgba(38, 36, 36, 0.7);
@@ -139,39 +136,36 @@
   border: 0;
   padding-top: 35px;
 }
-.table thead tr td{
+.table thead tr td {
   text-align: center;
   background-color: rgba(38, 36, 36, 0.7);
   color: white;
   border: 0;
 }
-.rr{
+.rr {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-.rrr{
-border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;
+.rrr {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .search-container {
   position: relative;
-  display: inline-block; 
-  width: 100%; 
+  display: inline-block;
+  width: 100%;
 }
-
-
 
 .search-icon {
   position: absolute;
-  left: 180px; 
+  left: 180px;
   top: 50%;
-  transform: translateY(-50%); 
-  color: #BF9B30; 
-  pointer-events: none; 
+  transform: translateY(-50%);
+  color: #bf9b30;
+  pointer-events: none;
 }
-
 
 .next {
   display: flex;
@@ -184,12 +178,12 @@ border-bottom-right-radius: 10px;
 }
 
 .next1 .page-item .page-link {
-  color: #BF9B30; 
+  color: #bf9b30;
 }
 
 .next1 .page-item.active .page-link {
-  background-color: rgba(0, 0, 0, 0.1); 
-  color: white; 
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 .next1 .page-link {
@@ -201,14 +195,19 @@ border-bottom-right-radius: 10px;
   color: white;
 }
 @media (max-width: 768px) {
- .table tbody tr td{
-  display: block;
- }
- .table thead tr td{
-  display: block;
- }
- .table tbody tr td .icons{
-  display: flex;
-  justify-content: space-around;
- }
+  .rr,
+  .rrr {
+    border-radius: 0;
+  }
+
+  .table tbody tr td {
+    display: block;
+  }
+  .table thead tr td {
+    display: block;
+  }
+  .table tbody tr td .icons {
+    display: flex;
+    justify-content: space-around;
+  }
 }
