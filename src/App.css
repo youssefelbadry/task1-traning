@@ -81,6 +81,7 @@ body {
 .all-project {
   height: 100vh;
   background-image: url(./image/secondary_background.jpg);
+  background-color: red;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -90,6 +91,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
+
+}
+
+.sec2{
+  display: flex;
+  justify-content: space-around;
 }
 
 .opicity {

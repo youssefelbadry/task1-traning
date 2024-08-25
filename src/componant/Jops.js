@@ -37,7 +37,7 @@ return (
   {/* SECTION 1 */}
   <div className="all-project col-lg-12">
     <div className="opicity">
-      <div className="hheader">
+      <div className="hheader container">
         <div className="line-hight col-9">
           <h2 style={{ margin: "20px 30px" }}>Applications "For "Job" at" company name"</h2>
           <div className="line"></div>
@@ -60,6 +60,13 @@ return (
       </div>
       {/* ================================================================= */}
       {/* SECTION2 */}
+      <div className="sec2 container">
+              <div className="">{/* 
+
+             // WRITE YOUR CODE SECTION // 
+
+               */}
+               </div>
       <div  className="container mt-4">
         <div className="row">
           <div className="col">
@@ -79,8 +86,9 @@ return (
 
         <div className="col push">{jItem}</div>
       </div>
+      </div>
       {/* =========================================================================== */}
-      <div className="next">
+      <div className="next container">
       <ul
         className="pagination next1"
         style={{

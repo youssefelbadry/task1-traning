@@ -35,13 +35,13 @@ function NavHeader() {
         </Container>
       </Navbar>
 
-      <Container>
+     
         <Routes>
           <Route  path="/articles" element={<Articles />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/userstudent" element={<UserStudent />} />
         </Routes>
-      </Container>
+      
     </Router>
   );
 }

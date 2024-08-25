@@ -9,6 +9,7 @@ import { Zoom } from "react-reveal";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import bcg from "../image/secondary_background.jpg";
 
 //================================================================================================
 function Articles() {
@@ -40,11 +41,13 @@ function Articles() {
     return (
       <table className="table" key={index}>
         <tbody>
-          <tr >
+          <tr>
             <td className="col-lg-2 rr">{item.title}</td>
             <td className="col-lg-2">{item.category}</td>
             <td className="col-lg-3">
-              <button className="btn" style={buttonStyle}>{buttonText}</button>
+              <button className="btn" style={buttonStyle}>
+                {buttonText}
+              </button>
             </td>
             <td className="col-lg-3 time">{item.Time}</td>
             <td className="col-lg-2 rrr">
@@ -67,116 +70,124 @@ function Articles() {
     );
   });
   //===============================================================================
-
+  {
+    /* SECTION 1 */
+  }
   return (
     <Zoom>
-    <div>
-      {/* SECTION 1 */}
-      <div className="all-project col-lg-12">
-        <div className="opicity">
-          <div className="hheader">
-            <div className="line-hight col-9">
-              <h2 style={{ margin: "20px 30px" }}>Articles</h2>
-              <div className="line"></div>
-            </div>
-            <div className="search">
-              <div className="col" md>
-                <FloatingLabel controlId="floatingInputGrid">
-                  <div className="search-container">
-                    <Form.Control
-                      className="form"
-                      type="text"
-                      placeholder="Search"
-                      style={{ backgroundColor: "gray", border:'0'}}
-                    />
-                    <FontAwesomeIcon icon={faSearch} className="search-icon" />
-                  </div>
-                </FloatingLabel>
+      <div>
+        <div className="all-project">
+          <div className="opicity">
+            <div className="hheader container">
+              <div className="line-hight col-9">
+                <h2 style={{ margin: "20px 30px" }}>Articles</h2>
+                <div className="line"></div>
+              </div>
+              <div className="search">
+                <div className="col" md>
+                  <FloatingLabel controlId="floatingInputGrid">
+                    <div className="search-container">
+                      <Form.Control
+                        className="form"
+                        type="text"
+                        placeholder="Search"
+                        style={{ backgroundColor: "gray", border: "0" }}
+                      />
+                      <FontAwesomeIcon
+                        icon={faSearch}
+                        className="search-icon"
+                      />
+                    </div>
+                  </FloatingLabel>
+                </div>
               </div>
             </div>
-          </div>
-          {/* ================================================================= */}
-          {/* SECTION2 */}
-          <div className="container mt-4">
-            <div className="row">
-              <div className="col">
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <td className="col-lg-2">Title</td>
-                      <td className="col-lg-2">Category</td>
-                      <td className="col-lg-3">Status</td>
-                      <td className="col-lg-3">Date & Time</td>
-                      <td className="col-lg-2">Delete & Edit</td>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
-            </div>
+            {/* ================================================================= */}
+            {/* SECTION2 */}
+            <div className="sec2 container">
+              <div className="">{/* 
 
-            <div className=" push">{TdItem}</div>
+             // WRITE YOUR CODE SECTION // 
+
+               */}
+               </div>
+              <div className="container mt-4">
+                <div className="row">
+                  <div className="col">
+                    <table className="table">
+                      <thead>
+                        <tr>
+                          <td className="col-lg-2">Title</td>
+                          <td className="col-lg-2">Category</td>
+                          <td className="col-lg-3">Status</td>
+                          <td className="col-lg-3">Date & Time</td>
+                          <td className="col-lg-2">Delete & Edit</td>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+
+                <div className=" push">{TdItem}</div>
+              </div>
+            </div>
+            {/* =========================================================================== */}
+            <div className="next container">
+              <ul
+                className="pagination next1"
+                style={{
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  border: "none",
+                }}
+              >
+                <li className="page-item">
+                  <a className="page-link" href="#">
+                    Last
+                  </a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#">
+                    1
+                  </a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#">
+                    2
+                  </a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#">
+                    3
+                  </a>
+                </li>
+                <li className="page-item active">
+                  <a className="page-link" href="#">
+                    4
+                  </a>
+                </li>
+                <li className="page-item">
+                  <span className="page-link">...</span>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#">
+                    10
+                  </a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#">
+                    Next
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          {/* =========================================================================== */}
-          <div className="next">
-      <ul
-        className="pagination next1"
-        style={{
-          backgroundColor: "rgba(0, 0, 0, 0.5)", // لون الخلفية لجميع عناصر الترقيم
-          border: "none", // إزالة الحدود
-        }}
-      >
-        
-        <li className="page-item">
-          <a className="page-link" href="#">
-            Last
-          </a>
-        </li>
-        <li className="page-item">
-          <a className="page-link" href="#">
-            1
-          </a>
-        </li>
-        <li className="page-item">
-          <a className="page-link" href="#">
-            2
-          </a>
-        </li>
-        <li className="page-item">
-          <a className="page-link" href="#">
-            3
-          </a>
-        </li>
-        <li className="page-item active">
-          <a className="page-link" href="#">
-            4
-          </a>
-        </li>
-        <li className="page-item">
-          <span className="page-link">...</span>
-        </li>
-        <li className="page-item">
-          <a className="page-link" href="#">
-            10
-          </a>
-        </li>
-        <li className="page-item">
-          <a className="page-link" href="#">
-            Next
-          </a>
-        </li>
-       
-      </ul>
-    </div>
         </div>
       </div>
-    </div>
     </Zoom>
   );
 }
 
 export default Articles;
-
-
 
 // //IMPORTS
 // import { Container, Row, Col, Button } from "react-bootstrap";
@@ -325,6 +336,3 @@ export default Articles;
 // }
 
 // export default Articles;
-
-
-
