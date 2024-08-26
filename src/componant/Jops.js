@@ -8,6 +8,8 @@ import { Zoom } from "react-reveal";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import NavHeader from "./NavHeader";
+import { Routes } from "react-router-dom";
 
 
 function Jops() {
@@ -32,44 +34,57 @@ function Jops() {
 //===============================================================================
 
 return (
+
   <Zoom>
+
 <div>
   {/* SECTION 1 */}
-  <div className="all-project col-lg-12">
+  <div className="all-project col-lg-12 ">
     <div className="opicity">
-      <div className="hheader container">
-        <div className="line-hight col-9">
-          <h2 style={{ margin: "20px 30px" }}>Applications "For "Job" at" company name"</h2>
-          <div className="line"></div>
-        </div>
-        <div className="search">
-          <div className="col" md>
-            <FloatingLabel controlId="floatingInputGrid">
-              <div className="search-container">
-                <Form.Control
-                  className="form"
-                  type="text"
-                  placeholder="Search"
-                  style={{ backgroundColor: "gray", border:'0'}}
-                />
-                <FontAwesomeIcon icon={faSearch} className="search-icon" />
-              </div>
-            </FloatingLabel>
-          </div>
-        </div>
-      </div>
+      
       {/* ================================================================= */}
       {/* SECTION2 */}
       <div className="sec2 container">
-              <div className="">{/* 
-
-             // WRITE YOUR CODE SECTION // 
-
-               */}
-               </div>
-      <div  className="container mt-4">
+              
+              <div class="left-nav col-sm-12 col-lg-3 det-left">
+                  <ul>
+                    <li class="head-det">Users</li>
+                      <ul>
+                        <li>Admins</li>
+                        <li>Editors</li>
+                        <li>Instructors</li>
+                        <li>Students</li>
+                      </ul>
+                    <li class="head-det">Articles</li>
+                      <ul>
+                        <li>Published Articles</li>
+                        <li>Scheduled Articles</li>
+                        <li>Saved Drafts</li>
+                      </ul>
+                      <li class="head-det">Jobs</li>
+                      <ul>
+                        <li>Published Articles</li>
+                        <li>Scheduled Articles</li>
+                        <li>Saved Drafts</li>
+                      </ul>
+                      <li class="head-det">Courses</li>
+                      <ul>
+                        <li>Published Articles</li>
+                        <li>Scheduled Articles</li>
+                        <li>Saved Drafts</li>
+                      </ul>
+                    </ul>
+              </div>
+      <div  className=" mt-4">
         <div className="row">
           <div className="col">
+          <div className="hheader container">
+        <div className="line-hight">
+          <h2 style={{ margin: "20px 30px" }}>Applications "For "Job" at" company name"</h2>
+          <div className="line"></div>
+        </div>
+       
+      </div>
             <table className="table">
               <thead>
                 <tr>

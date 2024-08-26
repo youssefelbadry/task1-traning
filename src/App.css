@@ -5,8 +5,7 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.9) !important;
-  height: auto;
+  background-color:rgba(0, 0, 0) !important;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -54,26 +53,45 @@ body {
 /* ------------------------------------------------------------- */
 
 /* NavBar */
-.navbar {
-  background-color: rgba(0, 0, 0, 0.1);
+.navvv {
+  background-color:transparent !important;
+  color: white;
+}
+.bar{
+  height: auto;
+  background-color: black;
 }
 .aaa a {
   color: white;
 }
 
 .aaa {
-  color: #bf9b30;
-  margin-left: auto;
+  color: white;
 }
 .aaa a:hover {
   color: white;
 }
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
+.bar .nav-link.active,
+.bar .nav-link.show {
   color: #bf9b30 !important;
 }
 .navbar-toggler-icon {
   background-color: white;
+}
+
+.tt{
+  background-color: #282c34;
+}
+.tt a:hover{
+  color: #282c34;
+}
+
+.lis ul{
+  margin: auto;
+  color: white !important;
+}
+.navvv .nav-link.active {
+  color: white !important;
 }
 /* ======================================= */
 
@@ -97,6 +115,8 @@ body {
 .sec2{
   display: flex;
   justify-content: space-around;
+  margin-top: 150px;
+
 }
 
 .opicity {
@@ -105,7 +125,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 20px;
   overflow-y: auto; /* Enable scrolling inside this div if needed */
@@ -116,6 +136,8 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 10;
+  margin-top: 150px;
 }
 
 .line {
@@ -135,6 +157,42 @@ body {
   text-align: center;
 }
 
+.det-left ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  }
+  .det-left{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 670px;
+    padding: 10px 10px;
+  }
+  
+  .det-left ul li a {
+  display: block;
+  color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  }
+  
+  .det-left ul li a:hover {
+  background-color: #ddd;
+  }
+  
+  .det-left ul li ul {
+  display: none;
+  }
+  
+  .det-left li:hover ul {
+  display: block;
+  }
+  .head-det{
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px 5px;
+  margin:20px 0;
+  border-radius:5px ;
+  
+  }
 .table tbody tr td {
   text-align: center;
   height: 90px;
@@ -201,12 +259,26 @@ body {
   background-color: rgba(38, 36, 36, 0.8);
   color: white;
 }
-@media (max-width: 768px) {
+@media (max-width: 912px) {
   .rr,
   .rrr {
     border-radius: 0;
   }
+  .bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
+.det-left{
+  display: block;
+  /* margin-top: 20px; */
+}
+.sec2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
   .table tbody tr td {
     display: block;
   }

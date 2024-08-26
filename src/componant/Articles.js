@@ -78,13 +78,49 @@ function Articles() {
       <div>
         <div className="all-project">
           <div className="opicity">
-            <div className="hheader container">
-              <div className="line-hight col-9">
+            
+            {/* ================================================================= */}
+            {/* SECTION2 */}
+            <div className="sec2 container">
+            <div class="left-nav col-sm-12 col-lg-3 det-left">
+                  <ul>
+                    <li class="head-det">Users</li>
+                      <ul>
+                        <li>Admins</li>
+                        <li>Editors</li>
+                        <li>Instructors</li>
+                        <li>Students</li>
+                      </ul>
+                    <li class="head-det">Articles</li>
+                      <ul>
+                        <li>Published Articles</li>
+                        <li>Scheduled Articles</li>
+                        <li>Saved Drafts</li>
+                      </ul>
+                      <li class="head-det">Jobs</li>
+                      <ul>
+                        <li>Published Articles</li>
+                        <li>Scheduled Articles</li>
+                        <li>Saved Drafts</li>
+                      </ul>
+                      <li class="head-det">Courses</li>
+                      <ul>
+                        <li>Published Articles</li>
+                        <li>Scheduled Articles</li>
+                        <li>Saved Drafts</li>
+                      </ul>
+                    </ul>
+              </div>
+              <div className="container mt-4">
+                <div className="row">
+                  <div className="col">
+                  <div className="hheader container">
+              <div className="line-hight">
                 <h2 style={{ margin: "20px 30px" }}>Articles</h2>
                 <div className="line"></div>
               </div>
               <div className="search">
-                <div className="col" md>
+                <div className="" md>
                   <FloatingLabel controlId="floatingInputGrid">
                     <div className="search-container">
                       <Form.Control
@@ -102,18 +138,6 @@ function Articles() {
                 </div>
               </div>
             </div>
-            {/* ================================================================= */}
-            {/* SECTION2 */}
-            <div className="sec2 container">
-              <div className="">{/* 
-
-             // WRITE YOUR CODE SECTION // 
-
-               */}
-               </div>
-              <div className="container mt-4">
-                <div className="row">
-                  <div className="col">
                     <table className="table">
                       <thead>
                         <tr>
