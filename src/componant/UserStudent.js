@@ -9,6 +9,14 @@ import { Zoom } from "react-reveal";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons/faInstagram";
+import logo from "../image/seff_logo_transparent.png";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope";
+import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons/faPhoneVolume";
+
 
 
 function UserStudent() {
@@ -80,11 +88,18 @@ function UserStudent() {
           
           {/* ================================================================= */}
           {/* SECTION2 */}
+          <div className="admin-banel container">
+        <div>
+          <span>Admin Panel</span>
+          <div className="line"></div>
+          <span>6th June 2023</span>
+        </div>
+      </div>
           <div className="sec2 container">
           <div class="left-nav col-sm-12 col-lg-3 det-left">
                   <ul>
                     <li class="head-det">Users</li>
-                      <ul>
+                    <ul>
                         <li>Admins</li>
                         <li>Editors</li>
                         <li>Instructors</li>
@@ -98,14 +113,13 @@ function UserStudent() {
                       </ul>
                       <li class="head-det">Jobs</li>
                       <ul>
-                        <li>Published Articles</li>
-                        <li>Scheduled Articles</li>
+                        <li>Published Jobs</li>                       
                         <li>Saved Drafts</li>
                       </ul>
                       <li class="head-det">Courses</li>
                       <ul>
-                        <li>Published Articles</li>
-                        <li>Scheduled Articles</li>
+                        <li>Published Courses</li>
+                        <li>Scheduled Couraea</li>
                         <li>Saved Drafts</li>
                       </ul>
                     </ul>
@@ -202,6 +216,56 @@ function UserStudent() {
         </li>
        
       </ul>
+    </div>
+    <div className="footer">
+    <div className="foot-logo">
+        <img src={logo}  title="logo"
+                height="150px"
+                width="130px"
+                alt="Logo"></img>
+      </div>
+      <div className="words-footer container">
+    
+      
+      <div className="word-right ">
+        <h2>SOFTWARE ENGINEERING FOR FUTURE</h2>
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>TECH</li>
+          <li>BUSINESS</li>
+          <li>SECURITY</li>
+          </ul>
+          <ul>
+          <li>MEDICAL</li>
+          <li>STARTUPS</li>
+          <li>APPS</li>
+          <li>COURSES</li>
+          <li>CONTACT US</li>
+          <li>SPORTS</li>
+        </ul>
+      </div>
+      <div className="left-footer">
+      <p>sefffuture@gmail.com <FontAwesomeIcon icon={faEnvelope} style={{color:'#bf9b30'}}/> </p>
+      <p> +20 109 8481 288 <FontAwesomeIcon icon={faPhoneVolume} style={{color:'#bf9b30'}}/></p>
+      <p> +20155 5177 645 </p>
+    
+    </div>
+    </div>
+    <hr/>
+   <div className="after-footer container">
+    <div>
+  <span>@2023 EGYPT,ALL RIGHTS RESERVED</span>
+    </div>
+    <div>
+<ul>
+  <li><FontAwesomeIcon icon={faFacebook} style={{fontSize:'35px'}}/></li>
+  <li><FontAwesomeIcon icon={faTwitter} style={{fontSize:'35px'}}/></li>
+  <li><FontAwesomeIcon icon={faInstagram} style={{fontSize:'35px'}}/></li>
+  <li><FontAwesomeIcon icon={faLinkedin} style={{fontSize:'35px'}}/></li>
+</ul>
+    </div>
+   </div>
     </div>
         </div>
       </div>

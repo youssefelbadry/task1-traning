@@ -99,7 +99,6 @@ body {
 .all-project {
   height: 100vh;
   background-image: url(./image/secondary_background.jpg);
-  background-color: red;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -111,7 +110,11 @@ body {
   padding: 20px;
 
 }
-
+.admin-banel{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
 .sec2{
   display: flex;
   justify-content: space-around;
@@ -258,6 +261,40 @@ body {
 .next1 .page-link:hover {
   background-color: rgba(38, 36, 36, 0.8);
   color: white;
+}
+
+.footer{
+
+  height: 300px;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+.words-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.footer ul{
+  display: flex;
+justify-content: space-evenly;
+}
+.footer li{
+list-style: none;
+margin-left: 20px;
+
+}
+
+.after-footer{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
 }
 @media (max-width: 912px) {
   .rr,
