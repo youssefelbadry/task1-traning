@@ -7,14 +7,26 @@ import Header from "./Header";
 function Jops() {
   const jItem = JospsData.map((item) => {
     return (
-      <table className="table">
+      <table className="table mob-table">
         <tbody>
           <tr>
-            <td className="col-lg-3 rr">{item.title}</td>
-            <td className="col-lg-1">{item.Experiance}</td>
-            <td className="col-lg-3">{item.Email} </td>
-            <td className="col-lg-2 time">{item.phone}</td>
-            <td className="col-lg-3 rrr">
+            <td className="col-lg-3 rr zz">
+              <strong>Applicant:</strong>
+              {item.title}
+            </td>
+            <td className="col-lg-1 zz">
+              <strong>Experiance:</strong>
+              {item.Experiance}
+            </td>
+            <td className="col-lg-3 zz">
+              <strong>Email:</strong>
+              {item.Email}{" "}
+            </td>
+            <td className="col-lg-2 time zz">
+              <strong>Mobile Number:</strong>
+              {item.phone}
+            </td>
+            <td className="col-lg-3 rrr zz but-jobs">
               <button
                 className="btn"
                 style={{ backgroundColor: "#BF9B30", border: "0" }}
@@ -123,10 +135,10 @@ function Jops() {
                       <div className="line"></div>
                     </div>
                   </div>
-                  <table className="table">
+                  <table className="table table-mob">
                     <thead>
                       <tr>
-                        <td className="col-lg-3">Title</td>
+                        <td className="col-lg-3">Applicant</td>
                         <td className="col-lg-1">Experiance</td>
                         <td className="col-lg-3">Email</td>
                         <td className="col-lg-2">Mobile Number</td>

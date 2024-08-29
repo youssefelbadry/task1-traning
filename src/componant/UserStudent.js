@@ -31,17 +31,32 @@ function UserStudent() {
     }
 
     return (
-      <table className="table" key={index}>
+      <table className="table mob-table" key={index}>
         <tbody>
           <tr>
-            <td className="col-lg-2 rr">{item.title}</td>
-            <td className="col-lg-2">
+            <td className="col-lg-2 rr zz">
+              <strong>Name:</strong>
+              {item.title}
+            </td>
+            <td className="col-lg-2 but-lg">
               <button style={buttonStyle}>{buttonText}</button>
             </td>
-            <td className="col-lg-2">{item.userid}</td>
+            <td className="col-lg-2 zz">
+              <strong>User Id:</strong>
+              {item.userid}
+            </td>
 
-            <td className="col-lg-2 time">{item.role}</td>
-            <td className="col-lg-2 time">{item.email}</td>
+            <td className="col-lg-2 time zz">
+              <strong>Role:</strong>
+              {item.role}
+            </td>
+            <td className="col-lg-2 time zz">
+              <strong>Email:</strong>
+              {item.email}
+            </td>
+            <td className="col-lg-2 but-mob">
+              <button style={buttonStyle}>{buttonText}</button>
+            </td>
             <td className="col-lg-2 rrr">
               <div className="icons rrr">
                 <i class="far fa-trash-alt col-lg-6"></i>
@@ -68,6 +83,12 @@ function UserStudent() {
               <span>Admin Panel</span>
               <div className="line"></div>
               <span>6th June 2023</span>
+            </div>
+
+            <div className="btn-admin">
+              <button className="btn" style={{ backgroundColor: "#bf9b30" }}>
+                CREATE NEW USER
+              </button>
             </div>
           </div>
           <div className="sec2 container">
@@ -164,7 +185,7 @@ function UserStudent() {
                       </div>
                     </div>
                   </div>
-                  <table className="table">
+                  <table className="table table-mob">
                     <thead>
                       <tr>
                         <td className="col-lg-2">Name</td>
@@ -179,7 +200,41 @@ function UserStudent() {
                 </div>
               </div>
 
-              <div className="col push">{UsItem}</div>
+              <div className="col push">
+                {UsItem}
+                <div
+                  className="btn-admin-mob"
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    height: "90px",
+                    flexDirection: "column",
+                    marginTop: "25px",
+                    marginBottom: "20px",
+                  }}
+                >
+                  <div>
+                    <button
+                      className="btn"
+                      style={{ backgroundColor: "#bf9b30", margin: "auto" }}
+                    >
+                      CREATE NEW USER
+                    </button>
+                  </div>
+                  <div>
+                    <button
+                      className="btn"
+                      style={{
+                        borderColor: "#bf9b30",
+                        color: "white",
+                        margin: "auto",
+                      }}
+                    >
+                      Uploud Certificates
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           {/* =========================================================================== */}

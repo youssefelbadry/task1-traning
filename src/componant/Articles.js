@@ -32,18 +32,34 @@ function Articles() {
     }
 
     return (
-      <table className="table" key={index}>
+      <table className="table mob-table" key={index}>
         <tbody>
           <tr>
-            <td className="col-lg-2 rr">{item.title}</td>
-            <td className="col-lg-2">{item.category}</td>
-            <td className="col-lg-3">
+            <td className="col-lg-2 rr zz">
+              {" "}
+              <strong>Title:</strong>
+              {item.title}
+            </td>
+            <td className="col-lg-2 zz">
+              {" "}
+              <strong>Category:</strong>
+              {item.category}
+            </td>
+            <td className="col-lg-3 but-lg">
               <button className="btn" style={buttonStyle}>
                 {buttonText}
               </button>
             </td>
-            <td className="col-lg-3 time">{item.Time}</td>
-            <td className="col-lg-2 rrr">
+            <td className="col-lg-3 time zz">
+              <strong>Data&Time:</strong>
+              {item.Time}
+            </td>
+            <td className="col-lg-3 but-mob">
+              <button className="btn" style={buttonStyle}>
+                {buttonText}
+              </button>
+            </td>
+            <td className="col-lg-2 rrr zz">
               <div className="icons rrr">
                 <i class="far fa-trash-alt col-lg-6"></i>
                 <i class="far fa-edit col-lg-6"></i>
@@ -70,6 +86,11 @@ function Articles() {
               <span>Admin Panel</span>
               <div className="line"></div>
               <span>6th June 2023</span>
+            </div>
+            <div className="btn-admin">
+              <button className="btn" style={{ backgroundColor: "#bf9b30" }}>
+                CREATE NEW ARTICLES
+              </button>
             </div>
           </div>
           <div className="sec2 container">
@@ -167,7 +188,7 @@ function Articles() {
                       </div>
                     </div>
                   </div>
-                  <table className="table">
+                  <table className="table table-mob">
                     <thead>
                       <tr>
                         <td className="col-lg-2">Title</td>
@@ -181,7 +202,17 @@ function Articles() {
                 </div>
               </div>
 
-              <div className=" push">{TdItem}</div>
+              <div className=" push">
+                {TdItem}
+                <div className="btn-admin-mob">
+                  <button
+                    className="btn"
+                    style={{ backgroundColor: "#bf9b30" }}
+                  >
+                    CREATE NEW ARTICLES
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
           {/* =========================================================================== */}

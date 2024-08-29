@@ -31,18 +31,33 @@ function Cjobs() {
     }
 
     return (
-      <table className="table" key={index}>
+      <table className="table mob-table" key={index}>
         <tbody>
           <tr>
-            <td className="col-lg-2 rr">{item.company}</td>
+            <td className="col-lg-2 rr zz">
+              <strong>Company:</strong>
+              {item.company}
+            </td>
 
-            <td className="col-lg-2">{item.posted}</td>
-            <td className="col-lg-2">
+            <td className="col-lg-2 zz">
+              <strong>Position:</strong>
+              {item.position}
+            </td>
+            <td className="col-lg-2 but-lg">
               <button style={buttonStyle}>{buttonText}</button>
             </td>
-            <td className="col-lg-2 time">{item.posted}</td>
-            <td className="col-lg-2 time">{item.Applications}</td>
-            <td className="col-lg-2 rrr">
+            <td className="col-lg-2 time zz">
+              <strong>Posted At:</strong>
+              {item.posted}
+            </td>
+            <td className="col-lg-2 time zz">
+              <strong>Applications:</strong>
+              {item.Applications}
+            </td>
+            <td className="col-lg-2 but-mob">
+              <button style={buttonStyle}>{buttonText}</button>
+            </td>
+            <td className="col-lg-2 rrr zz">
               <div className="icons rrr">
                 <i class="far fa-trash-alt col-lg-6"></i>
                 <i class="far fa-edit col-lg-6"></i>
@@ -72,9 +87,9 @@ function Cjobs() {
               <span>6th June 2023</span>
             </div>
 
-            <div>
+            <div className="btn-admin">
               <button className="btn" style={{ backgroundColor: "#bf9b30" }}>
-                Create New Job
+                CREATE NEW JOB
               </button>
             </div>
           </div>
@@ -173,13 +188,14 @@ function Cjobs() {
                       </div>
                     </div>
                   </div>
-                  <table className="table">
+                  <table className="table table-mob">
                     <thead>
                       <tr>
-                        <td className="col-lg-2">Title</td>
-                        <td className="col-lg-2">Category</td>
-                        <td className="col-lg-3">Status</td>
-                        <td className="col-lg-3">Date & Time</td>
+                        <td className="col-lg-2">Company</td>
+                        <td className="col-lg-2">Position</td>
+                        <td className="col-lg-2">Status</td>
+                        <td className="col-lg-2">Posted At</td>
+                        <td className="col-lg-2">Applications</td>
                         <td className="col-lg-2">Delete & Edit</td>
                       </tr>
                     </thead>
@@ -187,7 +203,17 @@ function Cjobs() {
                 </div>
               </div>
 
-              <div className=" push">{CJItem}</div>
+              <div className=" push">
+                {CJItem}
+                <div className="btn-admin-mob">
+                  <button
+                    className="btn"
+                    style={{ backgroundColor: "#bf9b30" }}
+                  >
+                    CREATE NEW JOB
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
           {/* =========================================================================== */}

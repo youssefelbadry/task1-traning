@@ -300,6 +300,16 @@ body {
   justify-content: space-between;
   padding: 10px 10px;
 }
+strong {
+  display: none;
+}
+.but-mob {
+  display: none;
+}
+.btn-admin-mob {
+  display: none;
+}
+
 @media (max-width: 912px) {
   .rr,
   .rrr {
@@ -312,6 +322,42 @@ body {
   .det-left {
     display: none;
     /* margin-top: 20px; */
+  }
+  strong {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .mob-table tbody tr td {
+    text-align: left;
+    padding-left: 15px;
+  }
+  .btn-admin {
+    display: none;
+  }
+  .btn-admin-mob {
+    display: block;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .btn-admin-mob button {
+    margin: 10px;
+    width: 100%;
+  }
+  .table-mob {
+    display: none;
+  }
+  .but-jobs button {
+    width: 100%;
+  }
+  .but-jobs {
+    margin-right: 15px;
+  }
+  .but-lg {
+    display: none;
+  }
+  .but-mob {
+    display: block;
   }
   .next {
     display: none;
@@ -334,12 +380,10 @@ body {
     display: flex;
     text-align: center;
   }
-  .table tbody tr td {
+  .table tbody tr .zz {
     display: block;
   }
-  .table thead tr td {
-    display: block;
-  }
+
   .table tbody tr td .icons {
     display: flex;
     justify-content: space-around;
